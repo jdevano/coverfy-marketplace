@@ -1,0 +1,183 @@
+:root {
+  --bg: #f7fbff;
+  --card: #ffffff;
+  --accent: #2e05e1;
+  --muted: #6b7280;
+  --radius: 12px;
+  --shadow: 0 6px 18px rgba(16, 24, 40, 0.06);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Inter', system-ui, Arial, sans-serif;
+  background: var(--bg);
+  color: #0f172a;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 28px auto;
+  padding: 0 16px;
+}
+
+/* Header */
+.site-header {
+  background: linear-gradient(90deg, #e6fffa, #f0f9ff);
+  padding: 16px 0;
+  box-shadow: 0 2px 8px rgba(2,6,23,0.05);
+}
+.nav-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.brand {
+  font-weight: 700;
+  color: #2f12d3dd;
+}
+nav a {
+  margin-left: 14px;
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 14px;
+}
+nav a:hover {
+  color: var(--accent);
+}
+
+/* Footer */
+.site-footer {
+  padding: 18px 0;
+  text-align: center;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.card {
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 24px;
+  margin: 20px auto;
+}
+
+/* Form login dan signup */
+form {
+  max-width: 380px;
+  margin: 0 auto;
+}
+form label {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: 500;
+  font-size: 14px;
+}
+.input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+  margin-top: 4px;
+}
+.input:focus {
+  border-color: var(--accent);
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(14,165,162,0.25);
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: var(--accent);
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+}
+.btn:hover {
+  background: #1638d1;
+}
+.btn.ghost {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid rgba(117, 106, 183, 0.5);
+}
+.btn.ghost:hover {
+  background: rgba(12, 9, 62, 0.05);
+}
+
+/* Pesan error dan sukses */
+.error {
+  color: #dc2626;
+  background: #fee2e2;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  margin-top: 8px;
+}
+.success {
+  color: #1f31bb;
+  background: #dcfce7;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.logo {
+  height: 40px;
+  border-radius: 50%;
+}
+
+.brand {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  color: #2914b1;
+  letter-spacing: 1px;
+}
+
+.category-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.category-card {
+  flex: 1;
+  max-width: 150px;
+  text-align: center;
+  padding: 16px;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  background: #f9f9f9;
+  text-decoration: none;
+  color: #333;
+  transition: 0.2s;
+}
+
+.category-card:hover {
+  background: #eef;
+  transform: translateY(-3px);
+}
+
+.category-card i {
+  display: block;
+  margin-bottom: 8px;
+  color: #3a57e8;
+}
